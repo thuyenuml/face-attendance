@@ -1,0 +1,34 @@
+.image-subject {
+    width: 60px;
+    height: auto;
+}
+.user-list tbody td .user-link {
+    display: block;
+    padding-top: 3px;
+    margin-left: 60px;
+    margin-bottom: 10px;
+}
+table a:hover {
+    text-decoration: none;
+}
+.user-list tbody td>img {
+    position: relative;
+    max-width: 50px;
+    float: left;
+    margin-right: 15px;
+}
+.table tbody tr td:first-child {
+    font-weight: 300;
+}
+.table tbody tr td {
+    vertical-align: middle;
+}
+table th, table td {
+    text-align: left;
+}
+table .hidden {
+    text-align: center;
+}
+span.bold {
+    font-weight: 600!important;
+}
