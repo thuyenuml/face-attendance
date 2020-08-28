@@ -32,3 +32,18 @@ table .hidden {
 span.bold {
     font-weight: 600!important;
 }
+.mt-2 {
+    padding-right: 15%;
+    padding-left: 15%;
+}
+.add {
+    width: 200px;
+    margin-top: 20px;
+}
+.table {
+    margin-top: 40px;
+}
+.table-bordered {
+    margin: auto;
+    width: 100%;
+}

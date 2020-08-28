@@ -10,6 +10,7 @@ import {
     Switch,
     Route
 } from "react-router-dom";
+import AddSubject from "./components/Subjects/add-subject/AddSubject";
 
 function App() {
     const [title, updateTitle] = useState(null);
@@ -30,6 +31,10 @@ function App() {
                     </Route>
                     <PrivateRoute path="/home">
                         <Home/>
+                    </PrivateRoute>
+                    <PrivateRoute path="/add-subject">
+                        <Header />
+                        <AddSubject/>
                     </PrivateRoute>
                 </Switch>
             </div>

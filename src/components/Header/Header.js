@@ -20,16 +20,16 @@ function Header(props) {
                     onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}
                 >
                     <Nav.Item>
-                        <Nav.Link href="/home">Accounts</Nav.Link>
+                        <Nav.Link href="/list-accounts">Accounts</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link eventKey="link-1">Subjects</Nav.Link>
+                        <Nav.Link href="/list-subjects" eventKey="link-1">Subjects</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link eventKey="link-2">Indentify Faces</Nav.Link>
+                        <Nav.Link href="/identify" eventKey="link-2">Indentify Faces</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link eventKey="link-3">Verify Face</Nav.Link>
+                        <Nav.Link href="/verify" eventKey="link-3">Verify Face</Nav.Link>
                     </Nav.Item>
                 </Nav>
             </div>

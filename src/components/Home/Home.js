@@ -4,20 +4,14 @@ import { ACCESS_TOKEN_NAME, API_BASE_URL } from '../constants/apiContants';
 import axios from 'axios';
 import './Home.css';
 import Header from "../Header/Header";
+import Nav from "react-bootstrap/Nav";
 
 function Home(props) {
     const [state, setState] = useState(0);
     useEffect(() => {
         const fetchData = async () => {
             const result = await axios.get(API_BASE_URL+'/subjects', { headers: { 'token': localStorage.getItem(ACCESS_TOKEN_NAME) }})
-                // .then(function (response) {
-                //     console.log('list subject: ', response);
-                //     setState(response.data.result);
-                //
-                // })
-                // .catch(function (error) {
-                //     redirectToLogin()
-                // });
+
             console.log('result: ', result);
             setState(result.data.result);
 
@@ -46,8 +40,11 @@ function Home(props) {
         <div className="home">
             <Header />
             <div className="mt-2">
-                <div>
-                    <table className="table user-list">
+                <div className="add">
+                    <Nav.Link href="/add-subject" className="btn btn-primary"><i className="fa fa-plus-circle fa-lg"/> Add New Subject</Nav.Link>
+                </div>
+                <div className="table">
+                    <table className="table-bordered user-list">
                         <thead>
                         <tr>
                             <th className="hidden" ><span>Id</span></th>
